@@ -47,5 +47,10 @@ public class Hospital {
     public void setConsultas(ArrayList<Consulta> consultas) {
         this.consultas = consultas;
     }
+
+    @Override
+    public String toString() {
+        return "Hospital{" + "nombre=" + nombre + ", ciudad=" + ciudad + ", consultas=" + consultas + '}';
+    }
     
 }

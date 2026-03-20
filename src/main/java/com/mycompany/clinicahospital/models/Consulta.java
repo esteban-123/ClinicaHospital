@@ -45,5 +45,10 @@ public class Consulta {
     public void setDiagnostico(String diagnostico) {
         this.diagnostico = diagnostico;
     }
+
+    @Override
+    public String toString() {
+        return "Consulta{" + "fecha=" + fecha + ", motivo=" + motivo + ", diagnostico=" + diagnostico + '}';
+    }
     
 }
