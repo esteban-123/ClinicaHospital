@@ -11,6 +11,8 @@ package com.mycompany.clinicahospital.models;
 public class Medico extends Persona {
     private String especialidad;
     private String tarjetaProfesional;
+    private int consultorio;
+
 
     public Medico() {
     }
@@ -41,10 +43,17 @@ public class Medico extends Persona {
     public void setTarjetaProfesional(String tarjetaProfesional) {
         this.tarjetaProfesional = tarjetaProfesional;
     }
+public int getConsultorio() {
+    return consultorio;
+}
+
+public void setConsultorio(int consultorio) {
+    this.consultorio = consultorio;
+}
 
     @Override
     public String toString() {
-        return "Medico{" + "especialidad=" + especialidad + ", tarjetaProfesional=" + tarjetaProfesional + '}';
+        return "Medico{" +  "especialidad=" + especialidad + ", tarjetaProfesional=" + tarjetaProfesional + '}';
     }
     
 }
