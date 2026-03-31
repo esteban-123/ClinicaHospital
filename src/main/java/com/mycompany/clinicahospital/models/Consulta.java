@@ -4,16 +4,11 @@
  */
 package com.mycompany.clinicahospital.models;
 
-/**
- *
- * @author ESTUDIANTE
- */
 public class Consulta {
     private String fecha;
     private String motivo;
     private String diagnostico;
     private int duracionMinutos;
-
 
     public Consulta() {
     }
@@ -47,18 +42,24 @@ public class Consulta {
     public void setDiagnostico(String diagnostico) {
         this.diagnostico = diagnostico;
     }
+
     public int getDuracionMinutos() {
-    return duracionMinutos;
-}
+        return duracionMinutos;
+    }
 
-public void setDuracionMinutos(int duracionMinutos) {
-    this.duracionMinutos = duracionMinutos;
-}
-
+    public void setDuracionMinutos(int duracionMinutos) {
+        this.duracionMinutos = duracionMinutos;
+    }
 
     @Override
     public String toString() {
-        return "Consulta{" + "fecha=" + fecha + ", motivo=" + motivo + ", diagnostico=" + diagnostico + '}';
+        return "Consulta{" +
+                "fecha=" + fecha +
+                ", motivo=" + motivo +
+                ", diagnostico=" + diagnostico +
+                ", duracionMinutos=" + duracionMinutos +
+                '}';
     }
-    
 }
+
+

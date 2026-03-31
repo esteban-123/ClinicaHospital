@@ -16,12 +16,17 @@ public class Hospital {
     private ArrayList<Consulta> consultas;
 
     public Hospital() {
+        consultas = new ArrayList<>();
     }
 
-    public Hospital(String nombre, String ciudad, ArrayList<Consulta> consultas) {
+    public Hospital(String nombre, String ciudad) {
         this.nombre = nombre;
         this.ciudad = ciudad;
-        this.consultas = consultas;
+        this.consultas = new ArrayList<>();
+    }
+
+    public void registrarConsulta(Consulta c) {
+        consultas.add(c);
     }
 
     public String getNombre() {
@@ -52,5 +57,4 @@ public class Hospital {
     public String toString() {
         return "Hospital{" + "nombre=" + nombre + ", ciudad=" + ciudad + ", consultas=" + consultas + '}';
     }
-    
 }

@@ -13,7 +13,6 @@ public class Medico extends Persona {
     private String tarjetaProfesional;
     private int consultorio;
 
-
     public Medico() {
     }
 
@@ -28,6 +27,12 @@ public class Medico extends Persona {
         this.tarjetaProfesional = tarjetaProfesional;
     }
 
+    // Método atender
+    public void atender(Consulta c) {
+        System.out.println(getNombre() + " atiende la consulta: " + c.getMotivo());
+    }
+
+    // Getters y Setters
     public String getEspecialidad() {
         return especialidad;
     }
@@ -40,20 +45,24 @@ public class Medico extends Persona {
         return tarjetaProfesional;
     }
 
-    public void setTarjetaProfesional(String tarjetaProfesional) {
+     public void setTarjetaProfesional(String tarjetaProfesional) {
         this.tarjetaProfesional = tarjetaProfesional;
     }
-public int getConsultorio() {
-    return consultorio;
-}
 
-public void setConsultorio(int consultorio) {
-    this.consultorio = consultorio;
-}
+    public int getConsultorio() {
+        return consultorio;
+    }
+
+    public void setConsultorio(int consultorio) {
+        this.consultorio = consultorio;
+    }
 
     @Override
     public String toString() {
-        return "Medico{" +  "especialidad=" + especialidad + ", tarjetaProfesional=" + tarjetaProfesional + '}';
+        return super.toString() + " Medico{" +
+                "especialidad=" + especialidad +
+                ", tarjetaProfesional=" + tarjetaProfesional +
+                ", consultorio=" + consultorio +
+                '}';
     }
-    
 }
